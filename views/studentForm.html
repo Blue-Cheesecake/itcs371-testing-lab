@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Students</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      .bs-example {
+        margin: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="bs-example">
+      <form action="/examples/actions/confirmation.php" method="post">
+        <div class="form-group row">
+          <label for="STU_ID" class="col-sm-2 col-form-label"
+            >Student ID:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="STU_ID"
+              placeholder="Student ID"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="STU_FNAME" class="col-sm-2 col-form-label"
+            >Student Firstname:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="STU_FNAME"
+              placeholder="Firstname"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="STU_LNAME" class="col-sm-2 col-form-label"
+            >Student Lastname:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="STU_LNAME"
+              placeholder="Lastname"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="STU_AGE" class="col-sm-2 col-form-label"
+            >Student Age:</label
+          >
+          <div class="col-sm-10">
+            <input
+              type="text"
+              class="form-control"
+              id="STU_AGE"
+              placeholder="Age"
+            />
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10 offset-sm-2">
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Insert"
+              id="insert"
+            />
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Update"
+              id="update"
+            />
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Delete"
+              id="delete"
+            />
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Select"
+              id="select"
+            />
+            <input
+              type="button"
+              class="btn btn-primary"
+              value="Select all"
+              id="selecta"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div id="output"></div>
+    <script src="js/callStudentService.js"></script>
+  </body>
+</html>
