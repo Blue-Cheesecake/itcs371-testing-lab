@@ -138,7 +138,8 @@ selectallBtnRef.addEventListener("click", () => {
     if (data.data.length > 0) {
       alert(data.message);
       let output;
-      output = "<h1>Student List</h1>";
+      output =
+        "<nav class='navbar navbar-light bg-light'><div class='container-fluid'><span class='navbar-brand mb-0 h1'>Student List</span></div></nav>";
       output += "<table class='table'>";
       output += "<thead>";
       output += "<tr>";
@@ -157,7 +158,7 @@ selectallBtnRef.addEventListener("click", () => {
       });
       output += "</tbody>";
       output += "</table>";
-      $("#output").html(output);
+      document.getElementById("output").innerHTML = output;
       clearInput();
     }
   });
