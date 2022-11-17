@@ -6,7 +6,8 @@ const express = require("express"),
 const dotenv = require("dotenv");
 dotenv.config();
 
-let whiteList = ["http://localhost:3100", "http://localhost:3200"];
+// let whiteList = ["http://localhost:3100", "http://localhost:3200"];
+let whiteList = ["http://127.0.0.1:3100", "http://127.0.0.1:3200"];
 
 let corsOptions = {
   origin: whiteList,
