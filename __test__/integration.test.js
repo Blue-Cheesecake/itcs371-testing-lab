@@ -1,11 +1,8 @@
+// 6388004, 6388073
 const express = require("express");
 let app = express();
 const router = require("../routes/studentServiceRoutes");
 const request = require("supertest");
-
-// jest.useFakeTimers();
-
-// create the connection to database
 
 app.use("/", router);
 
@@ -32,6 +29,7 @@ describe("Test: Ingration Testing. Getting student information by All or ID", ()
           STU_LNAME: "Davidson",
           STU_AGE: 25,
         },
+        // 6388004, 6388073
         {
           STU_ID: 4,
           STU_FNAME: "Benjamin",

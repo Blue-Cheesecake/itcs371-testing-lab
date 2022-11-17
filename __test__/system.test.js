@@ -1,3 +1,4 @@
+// 6388004, 6388073
 const puppeteer = require("puppeteer");
 
 describe("Test: System Testing.", () => {
@@ -19,7 +20,7 @@ describe("Test: System Testing.", () => {
     page.on("dialog", async (dialog) => {
       await dialog.accept();
     });
-
+    // 6388004, 6388073
     await page.click("input#select");
 
     const studentObject = await page.evaluate(() => {
